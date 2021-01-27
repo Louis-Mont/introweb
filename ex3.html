@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <style>
+        form {
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <form class="form-horizontal" action="" methode="get">
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="name">Votre pseudo</label>
+            <div class="col-sm-2">
+                <input type="text" class="form-control" id="name" name="name">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="pwd">Votre mot de passe</label>
+            <div class="col-sm-2">
+                <input type="password" class="form-control" id="pwd" name="pwd">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="pwd2">Ressaisir votre mot de passe</label>
+            <div class="col-sm-2">
+                <input type="password" class="form-control" id="pwd2" name="pwd2">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="oses">Votre OS préféré</label>
+            <div id="oses" class="col-sm-2">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="os" id="xp" value="xp">
+                    <label class="form-check-label" for="xp">
+                        Windows XP
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="os" id="vista" value="vista">
+                    <label class="form-check-label" for="vista">
+                        Windows Vista
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="os" id="macos" value="macos">
+                    <label class="form-check-label" for="macos">
+                        MacOS X
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="os" id="linux" value="linux">
+                    <label class="form-check-label" for="linux">
+                        Linux
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="os" id="other" value="other">
+                    <label class="form-check-label" for="other">
+                        Autre
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="own">Vous possédez</label>
+            <div id="own" class="col-sm-2">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="desktop">
+                    <label class="form-check-label" for="desktop" name="desktop">
+                        Un ordinateur de bureau
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="laptop" name="laptop">
+                    <label class="form-check-label" for="laptop">
+                        Un portable
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="netbook" name="netbook">
+                    <label class="form-check-label" for="netjook">
+                        Un netbook
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="pad" name="pad">
+                    <label class="form-check-label" for="pad">
+                        Une tablette (Pad)
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="job">Votre profession</label>
+            <div id="job" class="col-sm-2">
+                <select multiple class="form-control" name="job">
+                    <option>Chômeur</option>
+                    <option>Etudiant</option>
+                    <option>Fonctionnaire</option>
+                    <option>Privé</option>
+                    <option>Retraité</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-2">
+                <button type="submit" class="btn bot-default">S'inscrire !</button>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>
