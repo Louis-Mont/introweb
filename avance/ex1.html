@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1><b>Moteur de recherche</b></h1>
+        <form class="form-horizontal" action="#" methode="get">
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="motclef">Mots clefs</label>
+                <div class="col-sm-2">
+                    <input type="text" class="form-control" id="motclef" name="motclef">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="categorie">Catégorie</label>
+                <div id="categorie" class="col-sm-2">
+                    <select multiple class="form-control" name="categorie">
+                        <option>Jouet</option>
+                        <option>Location</option>
+                        <option>Voitures</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="dept">Département</label>
+                <div id="dept" class="col-sm-2">
+                    <select class="form-control" name="dept">
+                        <option value="" disabled selected class="text-info">Bretagne</option>
+                        <option value="cotedarmor">Côtes-D'armor</option>
+                        <option value="finistere">Finistère</option>
+                        <option value="morbihan">Morbihan</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-2">
+                    <button type="submit" class="btn btn-success btn-lg">Chercher</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
