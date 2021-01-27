@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <head>
+    <link rel="import" href="sommaire.htm">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <style>
         body {
@@ -10,14 +11,18 @@
 </head>
 
 <body>
-    <div class="table">
-        <table class="table table-bordered table-sm">
+    <div class="table-responsive">
+        <table class="table table-bordered ">
             <tr>
                 <td>
-                    a
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" name="summary" src="sommaire.htm"></iframe>
+                    </div>
                 </td>
-                <td rowspan="2">
-                    Accueil
+                <td>
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" name="cv" src="ex3.html"></iframe>
+                    </div>
                 </td>
             </tr>
         </table>
