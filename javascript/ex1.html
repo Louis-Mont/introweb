@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <style>
+        body {
+            padding: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        $("<span>Une ligne</span><p>P1</p><p>P2</p><p>P3</p><span><b>Une ligne en gras</b></span>").appendTo('body')
+        $('<table class="table table-bordered"><tr><td>première case</td><td>deuxième case</td><td>troisième case</td></tr><tr><td>et voici</td><td>une seconde</td><td>ligne</td></tr></table>').appendTo('body')
+        $('<span>ligne en gras sans b</span>'.bold()).appendTo('body')
+    </script>
+</body>

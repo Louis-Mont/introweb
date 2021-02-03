@@ -1,0 +1,68 @@
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <style>
+        body {
+            padding: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" id="form1">
+        <form class="form-horizontal" action="" methode="get">
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="copy">Copier</label>
+                <div class="col-sm-2">
+                    <input type="text" class="form-control" id="copy" name="copy">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="paste">Coller</label>
+                <div class="col-sm-2">
+                    <input type="text" class="form-control" id="paste" name="paste">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="cpf2">Copier form2</label>
+                <div class="col-sm-2">
+                    <input type="text" class="form-control" id="cpf2" name="cpf2">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-2">
+                    <button type="submit" class="btn bot-default">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="container" id="form2">
+        <form class="form-horizontal" action="" methode="get">
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="pf">Copier</label>
+                <div class="col-sm-2">
+                    <input type="text" class="form-control" id="pf" name="pf">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-2">
+                    <button type="submit" class="btn bot-default">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script>
+        console.log($("#paste"))
+        $("#copy").focusout(function () {
+            console.log("focusout")
+            console.log($("#copy").val())
+            $("#paste").val($("#copy").val())
+        })
+        $("#cpf2").focusout(function () {
+            console.log("focusout")
+            console.log($("#cpf2").val())
+            $("#pf").val($("#cpf2").val())
+        })
+    </script>
+</body>

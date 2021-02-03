@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <style>
+        body {
+            padding: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        let a = 1
+        $(`<p>${a}</p>`).appendTo('body')
+        let txt = "ok"
+        $(`<p>Ligne de texte : ${txt}</p>`).appendTo('body')
+        $(`<p>${a};${txt}</p>`).appendTo('body')
+        $(`<table class="table table-bordered"><tr><td>${a}</td><td>${txt}</td></tr><tr><td>${txt}</td><td>${a}</td></tr></table>`).appendTo('body')
+    </script>
+</body>

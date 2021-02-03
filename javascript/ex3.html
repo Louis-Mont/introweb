@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <style>
+        body {
+            padding: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        function print(str) {
+            $(`<p>${str}</p>`).appendTo('body')
+        }
+
+        function table(first, second, third, fourth) {
+            $(`<table class="table table-bordered"><tr><td>${first}</td><td>${second}</td></tr><tr><td>${third}</td><td>${first}</td></tr></table>`).appendTo('body')
+        }
+        
+        print('ok')
+        table('a', 'b', 'c', 'd')
+    </script>
+</body>

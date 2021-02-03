@@ -1,0 +1,32 @@
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <style>
+        body {
+            padding: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form class="form-horizontal" action="" methode="get">
+            <div class="form-group">
+                <label for="country">Pays</label>
+                <select class="form-control" id="country">
+                    <option>France</option>
+                    <option>Allemagne</option>
+                    <option>Angleterre</option>
+                    <option>Espagne</option>
+                    <option>Russie</option>
+                </select>
+            </div>
+            <div id="display_country">Pays</div>
+        </form>
+    </div>
+    <script>
+        $("#country").focusout(function () {
+            $("#display_country").text($("#country").val())
+        })
+    </script>
+</body>

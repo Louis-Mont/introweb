@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <style>
+        body {
+            padding: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <button class="btn" id="cm">Click me!</button>
+    <a id="mousehover">Link</a>
+    <script>
+        document.getElementById("cm").onclick = function () {
+            alert("txt");
+        };
+
+        document.getElementById("mousehover").onmouseover = function (str) {
+            alert(`${str}`);
+        };
+    </script>
+</body>

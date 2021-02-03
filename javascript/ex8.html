@@ -1,0 +1,26 @@
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <style>
+        body {
+            padding: 3%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <button class="btn" id="close">Fermer</button>
+        <button class="btn" id="open">Ouvrir</button>
+    </div>
+    <script>
+        $("#close").click(function () {
+            console.log("close")
+            open(location, '_self').close()
+        })
+        $("#open").click(function () {
+            console.log("open")
+            open("ex7.html")
+        })
+    </script>
+</body>
