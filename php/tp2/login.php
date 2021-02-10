@@ -9,6 +9,13 @@
 <body>
     <div class="container">
         <h1><b>Login</b></h1>
+        <?php
+        if (isset($_GET['connected'])) {
+            if ($_GET['connected'] != 1) {
+                echo "<p class=\"text-danger\">Erreur de connexion</p>";
+            }
+        }
+        ?>
         <form class="form-horizontal" action="identification.php" methode="get">
             <div class="form-group">
                 <label class="control-label col-sm-2" for="login">Login</label>

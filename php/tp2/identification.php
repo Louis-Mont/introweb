@@ -21,11 +21,13 @@
     $connected = $vals['login'] == 'crepo' && $vals['pwd'] == 'nutella';
     ?>
     <div class="container">
-        <?php if ($connected) {
-            echo "<p class=\"text-success\">Vous êtes connecté</p>";
-        } else {
-            echo "<p class=\"text-danger\">Erreur de connexion</p>";
-        }
-        ?>
+        <form class="form-horizontal" id="form_login" action="login.php" methode="get">
+            <div class="form-group">
+                <input type="hidden" class="form-control" name="connected" value="<?php echo $connected ?>">
+            </div>
+        </form>
     </div>
+    <script type="text/javascript">
+        $("#form_login").submit()
+    </script>
 </body>
