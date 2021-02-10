@@ -16,7 +16,7 @@
             }
         }
         ?>
-        <form class="form-horizontal" action="identification.php" methode="get">
+        <form class="form-horizontal" action="identification.php" method="GET">
             <div class="form-group">
                 <label class="control-label col-sm-2" for="login">Login</label>
                 <div class="col-sm-2">

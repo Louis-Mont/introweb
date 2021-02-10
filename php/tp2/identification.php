@@ -19,15 +19,20 @@
     }
 
     $connected = $vals['login'] == 'crepo' && $vals['pwd'] == 'nutella';
+    if ($connected) {
+        session_start();
+        $_SESSION['connected'] = 'yes';
+    }
     ?>
     <div class="container">
-        <form class="form-horizontal" id="form_login" action="login.php" methode="get">
+        <form class="form-horizontal" id="form_login" action="login.php" method="GET">
             <div class="form-group">
                 <input type="hidden" class="form-control" name="connected" value="<?php echo $connected ?>">
             </div>
         </form>
     </div>
     <script type="text/javascript">
-        $("#form_login").submit()
+        $("#form_login").submit();
+        
     </script>
 </body>

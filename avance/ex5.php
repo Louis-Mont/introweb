@@ -24,7 +24,7 @@
     ?>
     <div class="container">
         <h1><b>Moteur de recherche</b></h1>
-        <form class="form-horizontal" action="" methode="get">
+        <form class="form-horizontal" action="" method="GET">
             <div class="form-group">
                 <label class="control-label col-sm-2" for="login">Login</label>
                 <div class="col-sm-2">
