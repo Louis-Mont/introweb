@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.13.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1><b>Entrez les nombres</b></h1>
+        <form class="form-horizontal" action="ex2_processing.php" methode="get">
+            <div class="form-group">
+                <div class="col-sm-2">
+                    <input type="text" class="form-control" name="number"> est-il compris entre <input
+                        type="text" class="form-control" name="lower"> et <input type="text"
+                        class="form-control" name="upper">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-2">
+                    <button type="submit" class="btn bot-default">Réponse</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
