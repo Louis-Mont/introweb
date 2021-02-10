@@ -22,6 +22,8 @@
     if ($connected) {
         session_start();
         $_SESSION['connected'] = 'yes';
+        $_SESSION['login'] = $vals['login'];
+        $_SESSION['pwd'] = $vals['pwd'];
     }
     ?>
     <div class="container">
@@ -33,6 +35,5 @@
     </div>
     <script type="text/javascript">
         $("#form_login").submit();
-        
     </script>
 </body>

@@ -7,18 +7,23 @@
 </head>
 
 <body>
-
     <?php
     session_start();
+    
+    $form = "<form action=\"login.php\"></form>";
+    $script = '<script>$("form").submit()</script>';
+    $redirect = $form . $script;
+
     if (isset($_SESSION['connected'])) {
         if ($_SESSION['connected'] != 'yes') {
-            header('login.php');
+            echo $redirect;
         }
     } else {
-        header('login.php');
+        echo $redirect;
     }
     ?>
     <div class="container">
-        <a href="deconnexion.php"><img src="logout.jpg" /></a>
+        <p class="text-primary"><?php echo $_SESSION['login']?></p>
+        <a href="deconnexion.php"><img src="logout.jpg" class="img-responsive" /></a>
     </div>
 </body>
